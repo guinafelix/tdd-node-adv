@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node dist/main/api",
     "build": "rimraf dist && npx tsc -p tsconfig-build.json",
-    "lint": "eslint .",
+    "lint": "eslint 'src/**'",
     "lint:fix": "npm run lint -- --fix",
     "test": "jest --passWithNoTests --no-cache --runInBand",
     "test:watch": "npm test -- --watch",
